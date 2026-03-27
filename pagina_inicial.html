@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial - Ultratour RL COSTA - ZIGRA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Imagem de fundo com classes que serão responsáveis pela estilização -->
+    <div class="bg-layer">
+        <img src="img/cidade_noite.avif" alt="Cidade à noite" class="bg-img" />
+        <div class="bg-overlay"></div>
+        <div class="bg-vignette"></div>
+    </div>
+    
+    <!-- Aqui encontrei um efeito de cursor através do site React Bites e decidi implementá-lo -->
+    <canvas id="ghost-canvas"></canvas>
+
+    <!-- Div para apresentação da logo lateral que estilizei o svg via figma para que ficasse próximo a referência. O atributo aria-hidden="true" serve para melhorar a experiência de usuários deficientes, ocultando elementos "irrelevantes" -->
+    <div class="side-logo-wrap" aria-hidden="true">
+        <img src="img/logo_vert.svg" alt="" class="side-logo" />
+    </div>
+
+    <!-- Logos dos empreendimentos -->
+    <header class="brand-row">
+        <img src="img/Group 1248.svg" alt="Sousa Andrade · Humanae · Terral" class="brand-logos" />
+    </header>
+
+    <!-- Elementos Centrais - Logo e Botão.
+         Aqui também tem classes que são responsáveis pela estilização dos elementos via CSS e JS-->
+    <main class="hero">
+
+        <div class="logo-wrap">
+        <img src="img/Vector.svg" alt="FIÖRD" class="hero-logo" />
+        <div class="logo-glow"></div>
+        </div>
+
+        <button
+            class="cta-btn border-glow-card"
+            onclick="window.open('https://tour.ultratour.com.br/rl-costa/zigra/index.html','_blank')">
+            <div class="edge-light"></div>
+            <div class="border-glow-inner">
+                <span class="cta-text">IR PARA O ULTRATOUR</span>
+            </div>
+        </button>
+    </main>
+
+  <script src="main.js"></script>
+
+</body>
+</html>
